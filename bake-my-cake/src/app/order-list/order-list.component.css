@@ -1,0 +1,76 @@
+#request-section {
+    padding: 50px 20px;
+    background-color: #F0EAD6;
+}
+.search {
+    padding-bottom: 40px;
+}
+.search input {
+    width: 350px;
+    height: 25px;
+    border-radius: 10px;
+    border-color: rebeccapurple;
+    box-shadow: 1px 1px 10px rebeccapurple;
+    color: rebeccapurple;
+    background-color: aliceblue;
+    font-style: italic;
+    padding-left: 10px;
+}
+.search mat-label {
+    font-weight: 500;
+    font-style: italic;
+    padding-right: 10px;
+    color: rebeccapurple;
+    font-size: large;
+}
+table {
+    border: 2px solid rebeccapurple;
+    box-shadow: 1px 1px 10px rebeccapurple;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+}
+h1 {
+    text-align: center;
+    color: rebeccapurple;
+    font-weight: bold;
+}
+th {
+    font-weight: 500;
+    font-size: medium;
+    padding-top: 10px;
+    background-color: rebeccapurple !important;
+    color: aliceblue;
+}
+td {
+    font-family: cursive;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+img {
+    height: 100px;
+    width: 100px;
+}
+p {
+    font-weight: normal;
+    font-size: small;
+}
+.mat-row {
+    height: 50px;
+}
+.mat-cell {
+    text-align: center;
+}
+mat-paginator {
+    border: 2px solid rebeccapurple;
+    border-radius: 20px;
+    background-color: aliceblue;
+    font-size: medium;
+}
+table.mat-sort .mat-sort-header.mat-sort-header-arrow {
+    color:greenyellow;
+}
+::ng-deep .mat-sort-header-arrow {
+    color:greenyellow;
+}

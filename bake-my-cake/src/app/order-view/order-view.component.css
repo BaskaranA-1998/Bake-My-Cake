@@ -1,0 +1,86 @@
+.order {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    padding-bottom: 100px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 20px 40px;
+    background-color: rebeccapurple;
+    box-shadow: 1px 1px 10px 2px rebeccapurple;
+    border-radius: 10px;
+    color: aliceblue;
+}
+.input-sec {
+    display: flex;
+}
+.input-sec mat-form-field:nth-of-type(1) {
+    margin-right: 20px;
+}
+h1 {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+h2 {
+    font-weight: 500;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.btn {
+    text-align: center;
+}
+mat-form-field {
+    /* margin-top: -10px;
+    height: 70px; */
+    width: 100%;
+}
+mat-hint {
+    font-size: smaller;
+ }
+ .address {
+    margin-top: 10px;
+ }
+ .address mat-form-field {
+    margin-bottom: 15px;
+ }
+ span, strong {
+    color: black;
+ }
+ hr {
+    width: 100%;
+    margin-bottom: 20px;
+ }
+
+
+.card-content {
+    border-radius: 10px;
+    width: 500px;
+    font-family:serif;
+    background-color: aliceblue;
+    color: rebeccapurple;
+    box-shadow: 1px 1px 10px 2px rebeccapurple;
+ }
+ img {
+     height: 350px;
+     width: 500px;
+ }
+ .dessert-name {
+     text-align: center;
+     margin-top: 10px;
+ }
+ .dessert-name~div {
+     padding-left: 5px;
+     font-size: 17px;
+ }
+ #rating {
+     height: 15px;
+     width: 20px;
+     margin-right: 5px;
+ }

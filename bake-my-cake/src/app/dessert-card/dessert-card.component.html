@@ -1,0 +1,19 @@
+
+<!--render each dessert as cards-->
+<mat-card matRipple [matRippleCentered]="true" class="card-content">
+    <img mat-card-image src="{{dessert?.image}}" alt="{{dessert?.name}}">
+    <mat-card-content>
+        <h2 class="dessert">{{dessert?.name}}</h2>
+        <p>{{dessert?.description}}</p>
+        <h3>₹{{dessert?.price}} per {{dessert?.unit}}</h3>
+        <div class="button">
+            <div class="rating">
+                <img src="../../assets/images/rating.jpg" alt="rating" id="rating">{{dessert?.rating}}
+            </div>
+            <!--navigate to order view when the button is clicked-->
+            <a routerLink="../order/{{dessert?.id}}">
+                <button mat-raised-button matTooltip="Ready to Order the {{dessert?.name}}" color="accent">Order Now <mat-icon>shopping_cart</mat-icon></button>
+            </a>
+        </div>
+    </mat-card-content>
+</mat-card>

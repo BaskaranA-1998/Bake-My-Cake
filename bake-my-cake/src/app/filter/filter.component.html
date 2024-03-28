@@ -1,0 +1,11 @@
+
+<!--creating chips for filter the desserts based on category-->
+<div>
+  <mat-chip-listbox [(ngModel)]="filterCategory" (ngModelChange)="filter()">
+    <mat-icon color="accent">filter_list</mat-icon>
+    <mat-chip-option color="accent" value="All">All</mat-chip-option>
+    <mat-chip-option color="accent" value="Brownies">Brownies</mat-chip-option>
+    <mat-chip-option color="accent" value="Cakes">Cakes</mat-chip-option>
+    <mat-chip-option color="accent" value="Cookies">Cookies</mat-chip-option>
+  </mat-chip-listbox>
+</div>

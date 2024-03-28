@@ -1,0 +1,32 @@
+<div id="header">
+    <div id="title-block">
+        <h1>{{headerTitle}}</h1>
+    </div>
+
+    <div id="navbar">
+        <!--navigate to home view-->
+        <a routerLink="../dashboard">
+            <button mat-icon-button matTooltip="Home" aria-label="icon-button with home icon"><mat-icon>home</mat-icon></button>
+        </a>
+
+        <!--navigate to Order list view-->
+        <a routerLink="../order-list">
+            <button mat-icon-button matTooltip="List of Orders" aria-label="icon-button with list icon"><mat-icon>list_alt</mat-icon></button>
+        </a>
+
+        <!--navigate to login view-->
+        <a routerLink="../login">
+            <button mat-icon-button matTooltip="Login" aria-label="icon-button with login icon" *ngIf="!loginStatus">
+                <mat-icon>login</mat-icon>
+            </button>
+        </a>
+
+        <!--call the logout funtion when the button is clicked-->
+        <a>
+            <button mat-icon-button matTooltip="Logout" aria-label="icon-button with logout icon" *ngIf="loginStatus" (click)="logout()" >
+                <mat-icon>logout</mat-icon>
+            </button>
+        </a>
+    </div>
+
+</div>

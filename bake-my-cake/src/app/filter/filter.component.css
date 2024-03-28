@@ -1,0 +1,13 @@
+mat-icon {
+    padding-top: 2px;
+}
+mat-chip-listbox {
+    border: 2px solid rebeccapurple;
+    background-color: rebeccapurple;
+    box-shadow: 1px 1px 10px rebeccapurple;
+    border-radius: 10px;
+    padding: 0px 20px;
+}
+mat-chip-option {
+   height: 25px;
+}

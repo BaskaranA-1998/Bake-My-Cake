@@ -1,0 +1,58 @@
+section {
+    height: 80vh;
+    padding-top: 100px;
+}
+#login-form {
+    max-width: 400px;
+    margin: auto;
+    background-color: aliceblue;
+    border: 2px solid rebeccapurple;
+    box-shadow: 1px 1px 10px rebeccapurple;
+    border-radius: 10px;
+    padding: 20px 20px 0px;
+
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rebeccapurple;
+    font-weight: 500;
+}
+h4 {
+    margin-top: 15px;
+    color: rebeccapurple;
+}
+.input {
+    color: rebeccapurple;
+    font-weight: 400;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+}
+input {
+    width: 70%;
+    height: 20px;
+    border: 2px solid rebeccapurple;
+    border-radius: 5px;
+}
+.btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10px;
+}
+mat-hint {
+    margin-right: 100px;
+    color: red;
+    font-size: small;
+}
+a {
+    padding-left: 5px;
+    text-decoration: none;
+    color: rgba(5, 25, 249, 0.921);
+}
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,616 @@
+{
+  "orders": [
+    {
+      "customerName": "baskaran a",
+      "customerEmail": "bas@gmail.com",
+      "customerPhone": "9791256766",
+      "orderDate": "16-09-2023",
+      "dessertName": "Muffin Devil Horns",
+      "quantity": 7,
+      "totalPrice": 55.93,
+      "customerAddress": {
+        "doorNo": "71a",
+        "street": "vipin ",
+        "city": "chennai",
+        "pinCode": 625632
+      },
+      "dessert": {
+        "name": "Muffin Devil Horns",
+        "image": "../assets/images/Muffin Devil Horns.jpg",
+        "price": 7.99,
+        "unit": "piece",
+        "rating": 4.4,
+        "category": "Cakes",
+        "id": 16
+      },
+      "id": 1
+    },
+    {
+      "customerName": "rahul",
+      "customerEmail": "rahul23@hotmail.in",
+      "customerPhone": "8567662952",
+      "orderDate": "08-09-2023",
+      "dessertName": "Brownies Different Flavor",
+      "quantity": 14,
+      "totalPrice": 356.86,
+      "customerAddress": {
+        "doorNo": "66",
+        "street": "MG Road",
+        "city": "Bengaluru",
+        "pinCode": 658952
+      },
+      "dessert": {
+        "name": "Brownies Different Flavor",
+        "image": "../assets/images/Brownies Different Flavor.jpg",
+        "price": 25.49,
+        "unit": "box",
+        "boxSize": "(contains 3 Brownies)",
+        "rating": 4.5,
+        "category": "Brownies",
+        "id": 3
+      },
+      "id": 2
+    },
+    {
+      "customerName": "priya",
+      "customerEmail": "priya8d.j@niit.cc",
+      "customerPhone": "7856485659",
+      "orderDate": "11-09-2023",
+      "dessertName": "Muffin Ghost",
+      "quantity": 9,
+      "totalPrice": 80.91,
+      "customerAddress": {
+        "doorNo": "433f",
+        "street": "Park Street",
+        "city": "Kolkata",
+        "pinCode": 589555
+      },
+      "dessert": {
+        "name": "Muffin Ghost",
+        "image": "../assets/images/Muffin Ghost.jpg",
+        "price": 8.99,
+        "unit": "piece",
+        "rating": 4.5,
+        "category": "Cakes",
+        "id": 17
+      },
+      "id": 3
+    },
+    {
+      "customerName": "rajesh",
+      "customerEmail": "rajesh@yahoo.com",
+      "customerPhone": "8568565658",
+      "orderDate": "22-09-2023",
+      "dessertName": "Cherry Jelly Cheesecake",
+      "quantity": 7,
+      "totalPrice": 321.93,
+      "customerAddress": {
+        "doorNo": "66gd",
+        "street": "Linking Road",
+        "city": "Linking Road",
+        "pinCode": 756852
+      },
+      "dessert": {
+        "name": "Cherry Jelly Cheesecake",
+        "image": "../assets/images/Cherry Jelly Cheesecake.jpg",
+        "price": 45.99,
+        "unit": "piece",
+        "rating": 4.8,
+        "category": "Cakes",
+        "id": 2
+      },
+      "id": 4
+    },
+    {
+      "customerName": "anjali",
+      "customerEmail": "anjali98@niit.in",
+      "customerPhone": "8597565252",
+      "orderDate": "07-09-2023",
+      "dessertName": "Pumpkin Spice Cupcakes",
+      "quantity": 11,
+      "totalPrice": 362.89,
+      "customerAddress": {
+        "doorNo": "77",
+        "street": "Connaught Place",
+        "city": "New Delhi",
+        "pinCode": 657855
+      },
+      "dessert": {
+        "name": "Pumpkin Spice Cupcakes",
+        "image": "../assets/images/Pumpkin Spice Cupcakes.jpg",
+        "price": 32.99,
+        "unit": "box",
+        "boxSize": "(contains 6 Cupcakes)",
+        "rating": 4.2,
+        "category": "Cakes",
+        "id": 18
+      },
+      "id": 5
+    },
+    {
+      "customerName": "arjun",
+      "customerEmail": "arjun@gmail.com",
+      "customerPhone": "8574528555",
+      "orderDate": "22-09-2023",
+      "dessertName": "Berries Summer Cupcakes",
+      "quantity": 10,
+      "totalPrice": 289.9,
+      "customerAddress": {
+        "doorNo": "45g",
+        "street": "Brigade Road",
+        "city": "Bengaluru",
+        "pinCode": 652358
+      },
+      "dessert": {
+        "name": "Berries Summer Cupcakes",
+        "image": "../assets/images/Berries Summer Cupcakes.jpg",
+        "price": 28.99,
+        "unit": "box",
+        "boxSize": "(contains 6 Cupcakes)",
+        "rating": 4.5,
+        "category": "Cakes",
+        "id": 1
+      },
+      "id": 6
+    },
+    {
+      "customerName": "meera",
+      "customerEmail": "meera@gmail.com",
+      "customerPhone": "8579465255",
+      "orderDate": "08-09-2023",
+      "dessertName": "Butter Cookies",
+      "quantity": 12,
+      "totalPrice": 396,
+      "customerAddress": {
+        "doorNo": "33f",
+        "street": "Marine Drive",
+        "city": "Mumbai",
+        "pinCode": 568555
+      },
+      "dessert": {
+        "name": "Butter Cookies",
+        "image": "../assets/images/Butter Cookies.jpg",
+        "price": 33,
+        "unit": "box",
+        "boxSize": "(contains 12 Cookies)",
+        "rating": 4.5,
+        "category": "Cookies",
+        "id": 4
+      },
+      "id": 7
+    },
+    {
+      "customerName": "amit",
+      "customerEmail": "amit@gmail.in",
+      "customerPhone": "7589656425",
+      "orderDate": "07-09-2023",
+      "dessertName": "Chocolate Blueberries Cake",
+      "quantity": 4,
+      "totalPrice": 303.96,
+      "customerAddress": {
+        "doorNo": "44d",
+        "street": "Hazratganj",
+        "city": "Lucknow",
+        "pinCode": 458650
+      },
+      "dessert": {
+        "name": "Chocolate Blueberries Cake",
+        "image": "../assets/images/Chocolate Blueberries Cake.jpg",
+        "price": 75.99,
+        "unit": "piece",
+        "rating": 4.7,
+        "category": "Cakes",
+        "id": 5
+      },
+      "id": 8
+    },
+    {
+      "customerName": "aisha",
+      "customerEmail": "aisha@yahoo.com",
+      "customerPhone": "9856475232",
+      "orderDate": "26-09-2023",
+      "dessertName": "Chocolate Bonbons",
+      "quantity": 15,
+      "totalPrice": 600,
+      "customerAddress": {
+        "doorNo": "33",
+        "street": "Anna Salai",
+        "city": "Chennai",
+        "pinCode": 652321
+      },
+      "dessert": {
+        "name": "Chocolate Bonbons",
+        "image": "../assets/images/Chocolate Bonbons.jpg",
+        "price": 40,
+        "unit": "box",
+        "boxSize": "(contains 12 Cookies)",
+        "rating": 4.9,
+        "category": "Cookies",
+        "id": 6
+      },
+      "id": 9
+    },
+    {
+      "customerName": "sanjay",
+      "customerEmail": "sanjay@hotmail.com",
+      "customerPhone": "7568556500",
+      "orderDate": "09-09-2023",
+      "dessertName": "Chocolate Cookies",
+      "quantity": 12,
+      "totalPrice": 455.88,
+      "customerAddress": {
+        "doorNo": "33d",
+        "street": "Ashoka Road",
+        "city": "New Delhi",
+        "pinCode": 658611
+      },
+      "dessert": {
+        "name": "Chocolate Cookies",
+        "image": "../assets/images/Chocolate Cookies.jpg",
+        "price": 37.99,
+        "unit": "box",
+        "boxSize": "(contains 12 Cookies)",
+        "rating": 4.1,
+        "category": "Cookies",
+        "id": 7
+      },
+      "id": 10
+    },
+    {
+      "customerName": "nisha",
+      "customerEmail": "nisha@gmail.in",
+      "customerPhone": "7568525250",
+      "orderDate": "20-09-2023",
+      "dessertName": "Chocolate Cupcake",
+      "quantity": 12,
+      "totalPrice": 431.88,
+      "customerAddress": {
+        "doorNo": "333",
+        "street": "Commercial Street",
+        "city": "Bengaluru",
+        "pinCode": 652355
+      },
+      "dessert": {
+        "name": "Chocolate Cupcake",
+        "image": "../assets/images/Chocolate Cupcake.jpg",
+        "price": 35.99,
+        "unit": "box",
+        "boxSize": "(contains 6 Cupcakes)",
+        "rating": 4.6,
+        "category": "Cakes",
+        "id": 8
+      },
+      "id": 11
+    },
+    {
+      "customerName": "vikram",
+      "customerEmail": "vikram@niit.com",
+      "customerPhone": "9587365220",
+      "orderDate": "07-09-2023",
+      "dessertName": "Chocolate Summer Berries",
+      "quantity": 6,
+      "totalPrice": 134.94,
+      "customerAddress": {
+        "doorNo": "44",
+        "street": "Khader Nawaz Khan Road",
+        "city": "Chennai",
+        "pinCode": 625319
+      },
+      "dessert": {
+        "name": "Chocolate Summer Berries",
+        "image": "../assets/images/Chocolate Summer Berries.jpg",
+        "price": 22.49,
+        "unit": "piece",
+        "rating": 4.7,
+        "category": "Cakes",
+        "id": 9
+      },
+      "id": 12
+    },
+    {
+      "customerName": "pooja",
+      "customerEmail": "pooja@gmail.com",
+      "customerPhone": "8564223002",
+      "orderDate": "21-09-2023",
+      "dessertName": "Monster Theme Cake",
+      "quantity": 9,
+      "totalPrice": 323.91,
+      "customerAddress": {
+        "doorNo": "12b",
+        "street": "Hill Road",
+        "city": "Mumbai",
+        "pinCode": 652352
+      },
+      "dessert": {
+        "name": "Monster Theme Cake",
+        "image": "../assets/images/Monster Theme Cake.jpg",
+        "price": 35.99,
+        "unit": "piece",
+        "rating": 4.7,
+        "category": "Cakes",
+        "id": 15
+      },
+      "id": 13
+    },
+    {
+      "customerName": "suresh",
+      "customerEmail": "suresh@hotmail.com",
+      "customerPhone": "9856745032",
+      "orderDate": "07-09-2023",
+      "dessertName": "Isometric chocolate brownies",
+      "quantity": 15,
+      "totalPrice": 450,
+      "customerAddress": {
+        "doorNo": "33ff",
+        "street": "SP Mukherjee Road",
+        "city": "Hyderabad",
+        "pinCode": 652351
+      },
+      "dessert": {
+        "name": "Isometric chocolate brownies",
+        "image": "../assets/images/Isometric chocolate brownies.jpg",
+        "price": 30,
+        "unit": "box",
+        "boxSize": "(contains 3 Brownies)",
+        "rating": 4,
+        "category": "Brownies",
+        "id": 14
+      },
+      "id": 14
+    },
+    {
+      "customerName": "maya",
+      "customerEmail": "maya@outlook.in",
+      "customerPhone": "8567952101",
+      "orderDate": "07-09-2023",
+      "dessertName": "Fruit Cake",
+      "quantity": 5,
+      "totalPrice": 279.95,
+      "customerAddress": {
+        "doorNo": "3d",
+        "street": "SP Mukherjee Road",
+        "city": "Kolkata",
+        "pinCode": 562350
+      },
+      "dessert": {
+        "name": "Fruit Cake",
+        "image": "../assets/images/Fruit Cake.jpg",
+        "price": 55.99,
+        "unit": "piece",
+        "rating": 5,
+        "category": "Cakes",
+        "id": 13
+      },
+      "id": 15
+    },
+    {
+      "customerName": "ravi",
+      "customerEmail": "ravi@outlook.in",
+      "customerPhone": "8956240325",
+      "orderDate": "12-09-2023",
+      "dessertName": "Easter Cupcakes",
+      "quantity": 20,
+      "totalPrice": 519.8,
+      "customerAddress": {
+        "doorNo": "33b",
+        "street": "Chandni Chowk",
+        "city": "New Delhi",
+        "pinCode": 652351
+      },
+      "dessert": {
+        "name": "Easter Cupcakes",
+        "image": "../assets/images/Easter Cupcakes.jpg",
+        "price": 25.99,
+        "unit": "box",
+        "boxSize": "(contains 6 Cupcakes)",
+        "rating": 4.7,
+        "category": "Cakes",
+        "id": 12
+      },
+      "id": 16
+    },
+    {
+      "customerName": "kavita",
+      "customerEmail": "kavita@gmail.cc",
+      "customerPhone": "7598565202",
+      "orderDate": "09-09-2023",
+      "dessertName": "Cookies Cream Cake",
+      "quantity": 1,
+      "totalPrice": 85.99,
+      "customerAddress": {
+        "doorNo": "45d",
+        "street": "Church Street",
+        "city": "Bengaluru",
+        "pinCode": 653201
+      },
+      "dessert": {
+        "name": "Cookies Cream Cake",
+        "image": "../assets/images/Cookies Cream Cake.jpg",
+        "price": 85.99,
+        "unit": "piece",
+        "rating": 4.9,
+        "category": "Cakes",
+        "id": 11
+      },
+      "id": 17
+    },
+    {
+      "customerName": "aryan",
+      "customerEmail": "aryan@hotmail.org",
+      "customerPhone": "8569740025",
+      "orderDate": "16-09-2023",
+      "dessertName": "Classic Cheesecake",
+      "quantity": 20,
+      "totalPrice": 719.8,
+      "customerAddress": {
+        "doorNo": "66f",
+        "street": "Jawaharlal Nehru Road",
+        "city": "Kolkata",
+        "pinCode": 452302
+      },
+      "dessert": {
+        "name": "Classic Cheesecake",
+        "image": "../assets/images/Classic Cheesecake.jpg",
+        "price": 35.99,
+        "unit": "piece",
+        "rating": 4.8,
+        "category": "Cakes",
+        "id": 10
+      },
+      "id": 18
+    },
+    {
+      "customerName": "deepika",
+      "customerEmail": "deepika@niit.com",
+      "customerPhone": "7659555520",
+      "orderDate": "08-09-2023",
+      "dessertName": "Chocolate Blueberries Cake",
+      "quantity": 2,
+      "totalPrice": 151.98,
+      "customerAddress": {
+        "doorNo": "44",
+        "street": "Residency Road",
+        "city": "Pune",
+        "pinCode": 456253
+      },
+      "dessert": {
+        "name": "Chocolate Blueberries Cake",
+        "image": "../assets/images/Chocolate Blueberries Cake.jpg",
+        "price": 75.99,
+        "unit": "piece",
+        "rating": 4.7,
+        "category": "Cakes",
+        "id": 5
+      },
+      "id": 19
+    },
+    {
+      "customerName": "akash",
+      "customerEmail": "akash@fb.in",
+      "customerPhone": "7589652520",
+      "orderDate": "22-09-2023",
+      "dessertName": "Cherry Jelly Cheesecake",
+      "quantity": 5,
+      "totalPrice": 229.95,
+      "customerAddress": {
+        "doorNo": "55",
+        "street": "Race Course Road",
+        "city": "Vadodara",
+        "pinCode": 526520
+      },
+      "dessert": {
+        "name": "Cherry Jelly Cheesecake",
+        "image": "../assets/images/Cherry Jelly Cheesecake.jpg",
+        "price": 45.99,
+        "unit": "piece",
+        "rating": 4.8,
+        "category": "Cakes",
+        "id": 2
+      },
+      "id": 20
+    },
+    {
+      "customerName": "shreya",
+      "customerEmail": "shreya@gmail.com",
+      "customerPhone": "7598652552",
+      "orderDate": "08-09-2023",
+      "dessertName": "Pumpkin Spice Cupcakes",
+      "quantity": 8,
+      "totalPrice": 263.92,
+      "customerAddress": {
+        "doorNo": "33",
+        "street": "Brigade Road",
+        "city": "Kochi",
+        "pinCode": 562562
+      },
+      "dessert": {
+        "name": "Pumpkin Spice Cupcakes",
+        "image": "../assets/images/Pumpkin Spice Cupcakes.jpg",
+        "price": 32.99,
+        "unit": "box",
+        "boxSize": "(contains 6 Cupcakes)",
+        "rating": 4.2,
+        "category": "Cakes",
+        "id": 18
+      },
+      "id": 21
+    },
+    {
+      "customerName": "baskaran a",
+      "customerEmail": "bas@gmail.com",
+      "customerPhone": "9791256766",
+      "orderDate": "17-09-2023",
+      "dessertName": "Classic Cheesecake",
+      "quantity": 5,
+      "totalPrice": 179.95,
+      "customerAddress": {
+        "doorNo": "71a",
+        "street": "vipin",
+        "city": "chennai",
+        "pinCode": 625632
+      },
+      "dessert": {
+        "name": "Classic Cheesecake",
+        "image": "../assets/images/Classic Cheesecake.jpg",
+        "price": 35.99,
+        "unit": "piece",
+        "rating": 4.8,
+        "category": "Cakes",
+        "id": 10
+      },
+      "id": 22
+    },
+    {
+      "customerName": "baskaran",
+      "customerEmail": "bas@gmail.com",
+      "customerPhone": "9791206763",
+      "orderDate": "14-09-2023",
+      "dessertName": "Chocolate Blueberries Cake",
+      "quantity": 1,
+      "totalPrice": 75.99,
+      "customerAddress": {
+        "doorNo": "45",
+        "street": "southern homi",
+        "city": "impal",
+        "pinCode": 452652
+      },
+      "dessert": {
+        "name": "Chocolate Blueberries Cake",
+        "image": "../assets/images/Chocolate Blueberries Cake.jpg",
+        "price": 75.99,
+        "unit": "piece",
+        "rating": 4.7,
+        "category": "Cakes",
+        "description": "Rich chocolate cake with a sweet blueberry twist.",
+        "id": 5
+      },
+      "id": 23
+    },
+    {
+      "customerName": "baskaran",
+      "customerEmail": "ayyanar@gmail.com",
+      "customerPhone": "7589541256",
+      "orderDate": "07-09-2023",
+      "dessertName": "Cookies Cream Cake",
+      "quantity": 1,
+      "totalPrice": 85.99,
+      "customerAddress": {
+        "doorNo": "52",
+        "street": "north main",
+        "city": "chennai",
+        "pinCode": 452562
+      },
+      "dessert": {
+        "name": "Cookies Cream Cake",
+        "image": "../assets/images/Cookies Cream Cake.jpg",
+        "price": 85.99,
+        "unit": "piece",
+        "rating": 4.9,
+        "category": "Cakes",
+        "description": "A delectable cake featuring the classic combination of cookies and cream, a treat for your taste buds.",
+        "id": 11
+      },
+      "id": 24
+    }
+  ]
+}

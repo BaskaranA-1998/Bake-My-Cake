@@ -1,0 +1,49 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="'navigation'"
+      [mode]="'side'"
+      [opened]="false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <!--navigation links for different views-->
+      <a routerLink="../dashboard"><mat-icon class="icon">home</mat-icon>Home</a>
+      <a routerLink="../order-list"><mat-icon class="icon">list_alt</mat-icon>Orders</a>
+
+      <!--toggle the login/logout links based on isloggedin value-->
+      <a routerLink="../login" *ngIf="!isLoggedIn"><mat-icon class="icon">login</mat-icon>Login</a>
+      <a (click)="logout()" *ngIf="isLoggedIn"><mat-icon class="icon">logout</mat-icon>Logout</a>
+
+      <!--social media links-->
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank" matTooltip="Facebook" ><i class="fa fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com" target="_blank" matTooltip="Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank" matTooltip="Instagram"><i class="fa fa-instagram"></i></a>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        matTooltip="Menu"
+        (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <!--render the header component; sends the login status value to header component-->
+      <app-header [loginStatus]=isLoggedIn></app-header>
+    </mat-toolbar>
+
+    <!-- Add Content Here -->
+    <div class="outlet">
+      <!--render the body; recieve the event from login component-->
+      <router-outlet (activate)="onLoggedIn($event)"></router-outlet>
+    </div>
+
+    <!--render the footer component-->
+    <mat-toolbar color="primary" class="footer">
+      <app-footer></app-footer>
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,130 @@
+
+<section class="order">
+    <!--code for Reactive form with validation and error messages-->
+    <form (ngSubmit)="placeOrder()" [formGroup]="orderForm">
+        <h1>Fill the Order Details</h1>
+
+        <div class="input-sec">
+            
+            <mat-form-field appearance="fill">
+                <mat-label>Customer Name</mat-label>
+                <input type="text" placeholder="Enter Name" matInput name="customerName" formControlName="customerName" />
+                <mat-error *ngIf="customerName?.errors?.['required']">Customer Name cannot be empty</mat-error>
+                <mat-error *ngIf="customerName?.errors?.['minlength']">Minimum length should be 3 characters</mat-error>
+            </mat-form-field>
+       
+            <mat-form-field appearance="fill">
+                <mat-label>Email Id</mat-label>
+                <input type="email" placeholder="Enter Email Id (ex: abc@gmail.com)" matInput name="customerEmail" formControlName="customerEmail"/>
+                <mat-error *ngIf="customerEmail?.errors?.['required']">Customer Email Id cannot be empty</mat-error>
+                <mat-error *ngIf="customerEmail?.errors?.['pattern']">Enter valid Email Id</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="input-sec">
+            <mat-form-field appearance="fill">
+                <mat-label>Phone No</mat-label>
+                <input type="text" matInput  placeholder="Enter Phone No" name="customerPhone" formControlName="customerPhone" maxlength="10"/>
+                <mat-error *ngIf="customerPhone?.errors?.['required']">Customer Phone Number cannot be empty</mat-error>
+                <mat-error *ngIf="customerPhone?.errors?.['pattern']">Enter valid Phone No (10 digit number starting with 7/8/9)</mat-error>
+            </mat-form-field>
+        
+            <mat-form-field class="date">
+                <mat-label>Order Date</mat-label>
+                <input matInput placeholder="Pick Order Date" name="orderDate" [matDatepicker]="picker" [min]="minDate" formControlName="orderDate">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker color="primary"></mat-datepicker>
+                <mat-error *ngIf="orderDate?.errors?.['required']">Order Date cannot be empty</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="address" formGroupName="customerAddress">
+            <mat-label><h3>Address: </h3></mat-label>
+            <div class="input-sec">
+                <mat-form-field appearance="fill">
+                    <mat-label>Door No</mat-label>
+                    <input matInput type="text" placeholder="Enter Door No" name="doorNo" formControlName="doorNo">
+                    <mat-error *ngIf="doorNo?.errors?.['required']">Door No cannot be empty</mat-error>
+                </mat-form-field>
+        
+                <mat-form-field appearance="fill">
+                    <mat-label>Street</mat-label>
+                    <input matInput type="text" placeholder="Enter Street Name" name="street" formControlName="street">
+                    <mat-error *ngIf="street?.errors?.['required']">Street name cannot be empty</mat-error>
+                    <mat-error *ngIf="street?.errors?.['minlength']">Minimum length should be 3 characters</mat-error>
+                </mat-form-field>
+            </div>
+            
+            <div class="input-sec">
+                <mat-form-field appearance="fill">
+                    <mat-label>City</mat-label>
+                    <input matInput type="text" placeholder="Enter City Name" name="city" formControlName="city">
+                    <mat-error *ngIf="city?.errors?.['required']">City name cannot be empty</mat-error>
+                    <mat-error *ngIf="city?.errors?.['minlength']">Minimum length should be 3 characters</mat-error>
+                </mat-form-field>
+                
+                <mat-form-field appearance="fill">
+                    <mat-label>Pin Code</mat-label>
+                    <input matInput type="number" placeholder="Enter Pin Code " name="pinCode" formControlName="pinCode">
+                    <mat-error *ngIf="pinCode?.errors?.['required']">Zip code cannot be empty</mat-error>
+                    <mat-error *ngIf="pinCode?.errors?.['pattern']">Zip code should be a 6-digit number</mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <hr><br>
+        <div>
+            <mat-label><h3>Dessert Name: </h3></mat-label>
+            <mat-form-field appearance="fill">
+                <input type="text" matInput name="dessertName" [value]="dessert.name" readonly formControlName="dessertName"/>
+            </mat-form-field>
+        </div>
+        <div class="input-sec">
+            <mat-form-field appearance="fill">
+                <mat-label>Quantity</mat-label>
+                <input type="number" placeholder="Enter Quantity" matInput name="quantity" formControlName="quantity" (input)="calculateTotalPrice()" />
+                <mat-error *ngIf="quantity?.errors?.['required']">Order Quantity cannot be empty</mat-error>
+                <mat-error *ngIf="quantity?.errors?.['min']">Minimum Order Quantity is 1</mat-error>
+            </mat-form-field>
+        
+            <mat-form-field appearance="fill">
+                <mat-label>Total Price</mat-label>
+                <span matTextPrefix>₹ </span>
+                <input type="number" matInput name="totalPrice" readonly formControlName="totalPrice"/>
+            </mat-form-field>
+        </div>
+        
+        <div class="btn">
+            <button color="accent"mat-raised-button matTooltip="Place an Order" type="submit" [disabled]="orderForm.invalid">Order Now</button>
+        </div>
+    </form>
+
+    <div>
+        <!--render the selected dessert as a card structure-->
+        <mat-card class="card-content">
+            <img mat-card-image src="{{dessert.image}}" alt="{{dessert.name}}">
+            <mat-card-content>
+                <h2 class="dessert-name">{{dessert.name}}</h2>
+                <div>
+                    <p><strong>Category: </strong>{{dessert.category}}</p>
+                    <p><strong>Price: </strong>₹{{dessert.price}} per {{dessert.unit}} {{dessert.boxSize}}</p>
+                    <strong>Rating: </strong>
+                    <img src="../../assets/images/rating.jpg" alt="rating" id="rating">
+                    {{dessert.rating}}
+                </div><br><hr>
+                
+                <!--display the order details when the user type the inputs-->
+                <div>
+                    <h2 class="dessert-name">Order Details</h2>
+                    <p><strong>Customer Name: </strong>{{orderForm.get("customerName")?.value | titlecase}}</p>
+                    <p><strong>Email Id: </strong>{{orderForm.get("customerEmail")?.value | lowercase}}</p>
+                    <p><strong>Phone No: </strong>+91 {{orderForm.get("customerPhone")?.value}}</p>
+                    <br>
+                    <p><strong>Dessert Name: </strong>{{dessert.name}}</p>
+                    <p><strong>Quantity: </strong>{{orderForm.get("quantity")?.value}}</p>
+                    <p><strong>Total Price: </strong>₹{{orderForm.get("totalPrice")?.value}}</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</section>

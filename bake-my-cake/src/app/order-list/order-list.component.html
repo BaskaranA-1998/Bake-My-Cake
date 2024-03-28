@@ -1,0 +1,89 @@
+
+<section id="request-section">
+    <h1>Order Request List</h1>
+    <div class="search">
+      <mat-label>Search</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Ex: bas or 09" #input>
+    </div>
+
+    <table mat-table [dataSource]="dataSource" matSort>
+  
+        <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+      
+        <!-- Order Id Column -->
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef>No</th>
+          <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+
+        <!-- Order Date Column -->
+        <ng-container matColumnDef="orderDate">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header matTooltip="Sort by order date" matTooltipPosition="above">Order Date</th>
+          <td mat-cell *matCellDef="let element">{{element.orderDate}}</td>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="customerName">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header matTooltip="Sort by customer name" matTooltipPosition="above">Customer Name</th>
+          <td mat-cell *matCellDef="let element">{{element.customerName | titlecase}}</td>
+        </ng-container>
+      
+        <!-- Email Column -->
+        <ng-container matColumnDef="customerEmail">
+          <th mat-header-cell *matHeaderCellDef>Email</th>
+          <td mat-cell *matCellDef="let element">{{element.customerEmail}}</td>
+        </ng-container>
+      
+        <!-- Phone Column -->
+        <ng-container matColumnDef="customerPhone">
+          <th mat-header-cell *matHeaderCellDef>Phone No</th>
+          <td mat-cell *matCellDef="let element">+91 {{element.customerPhone}}</td>
+        </ng-container>
+      
+        <!-- Address Column -->
+        <ng-container matColumnDef="customerAddress">
+            <th mat-header-cell *matHeaderCellDef>Customer Address</th>
+            <td mat-cell *matCellDef="let element">
+              No: {{element.customerAddress.doorNo}},<br>
+              {{element.customerAddress.street | titlecase}} street,<br>
+              {{element.customerAddress.city | titlecase}}, <br>
+              Zip: {{element.customerAddress.pinCode}}
+            </td>
+        </ng-container>
+  
+        <!-- Dessert Image Column -->
+        <ng-container matColumnDef="dessert">
+          <th mat-header-cell *matHeaderCellDef>Dessert Image</th>
+          <td mat-cell *matCellDef="let element"><img src="{{element.dessert.image}}"></td>
+        </ng-container>
+
+        <!-- Dessert Name Column -->
+        <ng-container matColumnDef="dessertName">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header matTooltip="Sort by dessert name" matTooltipPosition="above">Dessert Name</th>
+            <td mat-cell *matCellDef="let element">{{element.dessertName}}</td>
+        </ng-container>
+
+        <!-- Quantity Column -->
+        <ng-container matColumnDef="quantity">
+            <th mat-header-cell *matHeaderCellDef>Quantity</th>
+            <td mat-cell *matCellDef="let element">{{element.quantity}}</td>
+        </ng-container>
+
+        <!-- Total Price Column -->
+        <ng-container matColumnDef="totalPrice">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header matTooltip="Sort by total price" matTooltipPosition="above">Total Price</th>
+            <td mat-cell *matCellDef="let element">₹ {{element.totalPrice}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+        <!-- Row shown when there is no matching data. -->
+        <tr class="mat-row" *matNoDataRow>
+          <td class="mat-cell" colspan="10">No data matching the filter "{{input.value}}"</td>
+        </tr>
+      </table>
+
+      <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</section>

@@ -1,0 +1,13 @@
+
+<div class="search">
+    <!--render the filter component-->
+    <app-filter (filteredCategory)="onfilter($event)"></app-filter>
+
+    <!--render the search component-->
+    <app-search (searchedText)="onSearch($event)"></app-search>
+</div>
+
+<div class="card-display">
+    <!--render the card component-->
+    <app-dessert-card *ngFor="let dessert of desserts" [dessert]="dessert"></app-dessert-card>
+</div>

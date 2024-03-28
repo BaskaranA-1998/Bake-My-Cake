@@ -1,0 +1,29 @@
+input {
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: rebeccapurple;
+    box-shadow: 1px 1px 10px rebeccapurple;
+    color: rebeccapurple;
+    font-family: Georgia, serif;
+    font-style: italic;
+    padding-left: 20px;
+}
+button {
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    color: #fbea69;
+    background-color: rebeccapurple;
+    margin-left: 5px;
+    box-shadow: 1px 1px 10px rebeccapurple;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight:bold;
+
+    cursor: pointer;
+}
+input::placeholder {
+    color: rebeccapurple;
+    font-size: 16px;
+}

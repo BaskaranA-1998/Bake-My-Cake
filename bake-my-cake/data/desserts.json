@@ -1,0 +1,193 @@
+{
+  "desserts": [
+    {
+      "name": "Berries Summer Cupcakes",
+      "image": "../assets/images/Berries Summer Cupcakes.jpg",
+      "price": 28.99,
+      "unit": "box",
+      "boxSize": "(contains 6 Cupcakes)",
+      "rating": 4.5,
+      "category": "Cakes",
+      "description": "Delicious summer cupcakes bursting with fresh berry goodness.",
+      "id": 1
+    },
+    {
+      "name": "Cherry Jelly Cheesecake",
+      "image": "../assets/images/Cherry Jelly Cheesecake.jpg",
+      "price": 45.99,
+      "unit": "cake",
+      "rating": 4.8,
+      "category": "Cakes",
+      "description": "A luscious cheesecake infused with the vibrant flavor of cherry jelly.",
+      "id": 2
+    },
+    {
+      "name": "Brownies Different Flavor",
+      "image": "../assets/images/Brownies Different Flavor.jpg",
+      "price": 25.49,
+      "unit": "box",
+      "boxSize": "(contains 3 Brownies)",
+      "rating": 4.5,
+      "category": "Brownies",
+      "description": "A delightful assortment of brownies in various enticing flavors.",
+      "id": 3
+    },
+    {
+      "name": "Butter Cookies",
+      "image": "../assets/images/Butter Cookies.jpg",
+      "price": 33,
+      "unit": "box",
+      "boxSize": "(contains 12 Cookies)",
+      "rating": 4.5,
+      "category": "Cookies",
+      "description": "Buttery and melt-in-your-mouth cookies with a classic flavor.",
+      "id": 4
+    },
+    {
+      "name": "Chocolate Blueberries Cake",
+      "image": "../assets/images/Chocolate Blueberries Cake.jpg",
+      "price": 75.99,
+      "unit": "cake",
+      "rating": 4.7,
+      "category": "Cakes",
+      "description": "Rich chocolate cake with a sweet blueberry twist.",
+      "id": 5
+    },
+    {
+      "name": "Chocolate Bonbons",
+      "image": "../assets/images/Chocolate Bonbons.jpg",
+      "price": 40,
+      "unit": "box",
+      "boxSize": "(contains 12 Cookies)",
+      "rating": 4.9,
+      "category": "Cookies",
+      "description": "Indulgent bite-sized chocolate treats with assorted fillings.",
+      "id": 6
+    },
+    {
+      "name": "Chocolate Cookies",
+      "image": "../assets/images/Chocolate Cookies.jpg",
+      "price": 37.99,
+      "unit": "box",
+      "boxSize": "(contains 12 Cookies)",
+      "rating": 4.1,
+      "category": "Cookies",
+      "description": "Rich and irresistible chocolate cookies for the ultimate cocoa fix.",
+      "id": 7
+    },
+    {
+      "name": "Chocolate Cupcake",
+      "image": "../assets/images/Chocolate Cupcake.jpg",
+      "price": 35.99,
+      "unit": "box",
+      "boxSize": "(contains 6 Cupcakes)",
+      "rating": 4.6,
+      "category": "Cakes",
+      "description": "A heavenly chocolate cupcake that's a sweet delight in every bite.",
+      "id": 8
+    },
+    {
+      "name": "Chocolate Summer Berries",
+      "image": "../assets/images/Chocolate Summer Berries.jpg",
+      "price": 22.49,
+      "unit": "cake",
+      "rating": 4.7,
+      "category": "Cakes",
+      "description": "A delectable combination of chocolate and fresh summer berries.",
+      "id": 9
+    },
+    {
+      "name": "Classic Cheesecake",
+      "image": "../assets/images/Classic Cheesecake.jpg",
+      "price": 35.99,
+      "unit": "cake",
+      "rating": 4.8,
+      "category": "Cakes",
+      "description": "A timeless and creamy dessert with a graham cracker crust, perfect for cheesecake enthusiasts.",
+      "id": 10
+    },
+    {
+      "name": "Cookies Cream Cake",
+      "image": "../assets/images/Cookies Cream Cake.jpg",
+      "price": 85.99,
+      "unit": "cake",
+      "rating": 4.9,
+      "category": "Cakes",
+      "description": "A delectable cake featuring the classic combination of cookies and cream, a treat for your taste buds.",
+      "id": 11
+    },
+    {
+      "name": "Easter Cupcakes",
+      "image": "../assets/images/Easter Cupcakes.jpg",
+      "price": 25.99,
+      "unit": "box",
+      "boxSize": "(contains 6 Cupcakes)",
+      "rating": 4.7,
+      "category": "Cakes",
+      "description": "Festive and colorful cupcakes perfect for Easter celebrations.",
+      "id": 12
+    },
+    {
+      "name": "Fruit Cake",
+      "image": "../assets/images/Fruit Cake.jpg",
+      "price": 55.99,
+      "unit": "cake",
+      "rating": 5,
+      "category": "Cakes",
+      "description": "A moist and flavorful cake loaded with a variety of fruits, perfect for any occasion.",
+      "id": 13
+    },
+    {
+      "name": "Isometric chocolate brownies",
+      "image": "../assets/images/Isometric chocolate brownies.jpg",
+      "price": 30,
+      "unit": "box",
+      "boxSize": "(contains 3 Brownies)",
+      "rating": 4,
+      "category": "Brownies",
+      "description": "Brownies with visually stunning isometric chocolate artistry.",
+      "id": 14
+    },
+    {
+      "name": "Monster Theme Cake",
+      "image": "../assets/images/Monster Theme Cake.jpg",
+      "price": 35.99,
+      "unit": "cake",
+      "rating": 4.7,
+      "category": "Cakes",
+      "description": "A fun and creative cake featuring a monster theme, sure to delight both kids and adults alike.",
+      "id": 15
+    },
+    {
+      "name": "Muffin Devil Horns",
+      "image": "../assets/images/Muffin Devil Horns.jpg",
+      "price": 7.99,
+      "unit": "piece",
+      "rating": 4.4,
+      "category": "Cakes",
+      "description": "Playful muffins with a devilish twist, featuring horn-shaped toppings for a whimsical treat.",
+      "id": 16
+    },
+    {
+      "name": "Muffin Ghost",
+      "image": "../assets/images/Muffin Ghost.jpg",
+      "price": 8.99,
+      "unit": "piece",
+      "rating": 4.5,
+      "category": "Cakes",
+      "description": "Adorable muffins with a spooky twist, shaped like friendly ghosts for a Halloween delight.",
+      "id": 17
+    },
+    {
+      "name": "Pumpkin Spice Cupcakes",
+      "image": "../assets/images/Pumpkin Spice Cupcakes.jpg",
+      "price": 32.99,
+      "unit": "box",
+      "boxSize": "(contains 6 Cupcakes)",
+      "rating": 4.2,
+      "category": "Cakes",
+      "description": "Delightful autumn cupcakes infused with the warm and comforting flavors of pumpkin spice.",
+      "id": 18
+    }
+  ]
+}

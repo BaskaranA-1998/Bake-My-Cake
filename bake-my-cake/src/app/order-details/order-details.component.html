@@ -1,0 +1,103 @@
+<div class="message">
+    <div>
+        <h1>Dear customer, Your order has been received and we will deliver it to your address within 2 hours</h1>
+        <h2>The Order Details are available below. To access the home page, <a routerLink="../../">click here...</a></h2>
+    </div>
+</div>
+<div class="card-content">
+    <!--render the Successful Order as card structure: Dessert Details-->
+    <mat-card>
+        <img mat-card-image src="{{order.dessert?.image}}" alt="{{order.dessert?.name}}">
+        <mat-card-content>
+            <h2 class="dessert-name">{{order.dessert?.name}}</h2>
+            <table>
+                <tr>
+                    <td>Category</td>
+                    <td>{{order.dessert?.category}}</td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>₹{{order.dessert?.price}} per {{order.dessert?.unit}} <br> {{order.dessert?.boxSize}}</td>
+                </tr>
+                <tr>
+                    <td>Rating</td>
+                    <td><img src="../../assets/images/rating.jpg" alt="rating" id="rating">
+                        {{order.dessert?.rating}}</td>
+                </tr>
+                <tr>
+                    <td>Order Date</td>
+                    <td>{{order.orderDate}}</td>
+                </tr>
+            </table>
+            <p>{{order.dessert?.description}}</p>
+        </mat-card-content>
+    </mat-card>
+
+    <!--render the Successful Order as card structure: Order Details-->
+    <mat-card id="order-details">
+        <mat-card-content>
+            <h2 class="dessert-name">Order Deatils</h2>
+            <table>
+                <tr>
+                    <td>Customer Name</td>
+                    <td>{{order.customerName | titlecase}}</td>
+                </tr>
+                <tr>
+                    <td>Customer Email</td>
+                    <td>{{order.customerEmail}}</td>
+                </tr>
+                <tr>
+                    <td>Customer Phone</td>
+                    <td>+91 {{order.customerPhone}}</td>
+                </tr>
+                <tr>
+                    <td>Order Date</td>
+                    <td>{{order.orderDate}}</td>
+                </tr><br>
+                <tr>
+                    <td>Dessert Name</td>
+                    <td>{{order.dessert?.name}}</td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>{{order.dessert?.category}}</td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>₹{{order.dessert?.price}} per {{order.dessert?.unit}} {{order.dessert?.boxSize}}</td>
+                </tr>
+                <tr>
+                    <td>Quantity Ordered</td>
+                    <td>{{order.quantity}}</td>
+                </tr>
+                <tr>
+                    <td>Total Price</td>
+                    <td>₹{{order.totalPrice}}</td>
+                </tr><br>
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Door No</td>
+                                <td>{{order.customerAddress?.doorNo}}</td>
+                            </tr>
+                            <tr>
+                                <td>Street Name</td>
+                                <td>{{order.customerAddress?.street | titlecase}}</td>
+                            </tr>
+                            <tr>
+                                <td>City</td>
+                                <td>{{order.customerAddress?.city | titlecase}}</td>
+                            </tr>
+                            <tr>
+                                <td>Pincode</td>
+                                <td>{{order.customerAddress?.pinCode}}</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </mat-card-content>
+    </mat-card>
+</div>

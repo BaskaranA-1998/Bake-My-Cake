@@ -1,0 +1,14 @@
+.footer-sec {
+    display: flex;
+    justify-content: center;
+    width: 85vw;
+    margin-left: 45px;
+}
+img {
+    width: 30px;
+    height: 30px;
+    padding-top: 10px;
+}
+a {
+    margin-left: 50px;
+}
